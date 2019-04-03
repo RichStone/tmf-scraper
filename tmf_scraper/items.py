@@ -8,9 +8,9 @@
 import scrapy
 
 
-class TmfScraperItem(scrapy.Item):
-    id = scrapy.Field()
-    creation_date = scrapy.Field()
+class Post(scrapy.Item):
+    id = scrapy.Field(serializer=int)
     author = scrapy.Field()
     text = scrapy.Field()
-    tags = scrapy.Field()
+    url = scrapy.Field()
+    creation_date = scrapy.Field()
