@@ -66,6 +66,7 @@ ROBOTSTXT_OBEY = True
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
    'tmf_scraper.pipelines.TmfScraperPipeline': 300,
+   'tmf_scraper.pipelines.JsonWriterPipeline': 700,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
